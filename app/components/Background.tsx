@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef } from "react"
+import * as THREE from "three"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Stars, Sphere } from "@react-three/drei"
 

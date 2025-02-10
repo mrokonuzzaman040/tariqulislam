@@ -5,7 +5,6 @@ import { motion } from "framer-motion"
 import { Home, User, Code, Mail } from "lucide-react"
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {

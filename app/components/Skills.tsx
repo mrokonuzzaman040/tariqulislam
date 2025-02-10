@@ -3,7 +3,7 @@
 import { motion, useAnimation } from "framer-motion"
 import { useEffect } from "react"
 import { useInView } from "react-intersection-observer"
-import { Code, Server, Database, Globe, Cpu, Zap } from "lucide-react"
+import { Code, Server, Database, Globe, Cpu, Zap, LucideIcon } from "lucide-react"
 
 const skills = [
   { name: "Next.js", level: 90, icon: Globe, color: "from-blue-400 to-blue-600" },
@@ -14,7 +14,14 @@ const skills = [
   { name: "Web3", level: 85, icon: Database, color: "from-purple-400 to-purple-600" },
 ]
 
-function SkillCard({ skill, index }) {
+interface Skill {
+  name: string;
+  level: number;
+  icon: LucideIcon;
+  color: string;
+}
+
+function SkillCard({ skill, index }: { skill: Skill; index: number }) {
   const controls = useAnimation()
   const [ref, inView] = useInView()
 

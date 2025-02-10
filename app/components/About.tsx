@@ -61,7 +61,7 @@ export default function About() {
             className="max-w-2xl mx-auto text-center"
           >
             <p className="mb-4">
-              I'm a passionate web developer with expertise in Next.js, Node.js, and React. I love creating efficient,
+              I&apos;m a passionate web developer with expertise in Next.js, Node.js, and React. I love creating efficient,
               scalable, and user-friendly web applications.
             </p>
             <p>

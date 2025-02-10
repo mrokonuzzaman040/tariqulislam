@@ -16,7 +16,7 @@ export default function Home() {
     const smoothScroll = (target: string) => {
       const element = document.querySelector(target)
       if (element) {
-        element.scrollInView({
+        element.scrollIntoView({
           behavior: "smooth",
           block: "start",
         })

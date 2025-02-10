@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import * as THREE from "three"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { Box, Torus } from "@react-three/drei"
 import { useRef } from "react"
@@ -48,7 +49,7 @@ export default function Hero() {
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
         >
-          Hi, I'm Tariqul Islam
+          Hi, I&apos;m Tariqul Islam
         </motion.h1>
         <motion.h2
           className="text-2xl md:text-4xl mb-8 neon-text"
